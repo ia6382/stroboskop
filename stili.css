@@ -29,6 +29,17 @@ telo {
 	padding: 10px;
 }
 
+.rob {
+	border: 1px solid transparent; 
+	border-color: #C30C21; 
+	border-radius: 4px; 
+}
+
+.senca {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
 #barve > button {
 	border: 0px;
 	margin: 5px;
