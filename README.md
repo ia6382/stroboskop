@@ -122,3 +122,10 @@ Repozitorija [GitHub](https://github.com) in [Bitbucket](https://bitbucket.org) 
 	###### Kaj naj oddam?
 	Spletno povezavo na končno uveljavitev v [GitHub](https://github.com) repozitoriju in zaporedje GIT ukazov, ki ste jih uporabili v ukazni lupini razvojnega okolja.
 	
+	
+	
+Študent z vpisno številko _63130003_ potrjujem, da sem __edini avtor__ oddane domače naloge.
+
+[Glavna](https://rawgit.com/ia6382/stroboskop/master/stroboskop.html)
+[Izgled](https://rawgit.com/ia6382/stroboskop/izgled/stroboskop.html)
+[Dinamika](https://rawgit.com/ia6382/stroboskop/dinamika/stroboskop.html)
