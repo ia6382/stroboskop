@@ -33,8 +33,8 @@ window.addEventListener('load', function() {
 		if (ustavi) {
 			ustavi = false;
 		} else {
-			novId = (id+1) % vrednosti.length;
-			timeout = Math.floor((Math.random() * (maxCas-minCas)) + minCas);
+			var novId = (id+1) % vrednosti.length;
+			var timeout = Math.floor((Math.random() * (maxCas-minCas)) + minCas);
 			setTimeout(function() {spremeniBarvo(novId)} , timeout);
 		}		
 	}
@@ -46,7 +46,7 @@ window.addEventListener('load', function() {
 	var zagon = function(event) {
 		vrednosti = [];
 		var barve = document.querySelectorAll("#barve > button");
-		for (i = 0; i < barve.length; i++) {
+		for (var i = 0; i < barve.length; i++) {
 			var barva = barve[i];
 			vrednosti.push(barva.innerHTML);
 		}
@@ -54,13 +54,21 @@ window.addEventListener('load', function() {
 		minCas = 1000;
 		maxCas = 1000;
 		spremeniBarvo(0);
-		
-		var start = document.querySelector("#start");
-		start.innerHTML = "Ustavi stroboskop";
-		start.removeEventListener('click', zagon);
-		start.addEventListener('click', stop);
 	}
 	
-	document.querySelector("#start").addEventListener('click', zagon);
+	var toggle = function(event) {
+		var start = document.querySelector("#start");
+		
+		if(start.innerHTML == "Zaženi stroboskop"){
+			start.innerHTML = "Ustavi stroboskop";
+			zagon();
+		}
+		else{
+			start.innerHTML = "Zaženi stroboskop";
+			stop();
+		}
+	}
+	
+	document.querySelector("#start").addEventListener('click', toggle);
 	
 });
